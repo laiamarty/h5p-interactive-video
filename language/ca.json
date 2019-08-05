@@ -1,113 +1,113 @@
 {
   "semantics": [
     {
-      "label": "Interactive Video Editor",
+      "label": "Editor de vídeo interactiu",
       "fields": [
         {
-          "label": "Upload/embed video",
+          "label": "Carrega/insereix vídeo",
           "fields": [
             {
-              "label": "Add a video",
-              "description": "Click below to add a video you wish to use in your interactive video. You can add a video link or upload video files. It is possible to add several versions of the video with different qualities. To ensure maximum support in browsers at least add a version in webm and mp4 formats."
+              "label": "Afegeix un vídeo",
+              "description": "Cliqueu a sota per afegir un vídeo que vulgueu fer servir al vostre vídeo interactiu. Podeu afegir un enllaç a un vídeo o carregar arxius de vídeo. ës possible afegir diferents versions del vídeo amb diferents qualitats. Per garantir el màxim suport als navegadors, afegiu com a mínim una versió en formats webm i mp4."
             },
             {
-              "label": "Start screen options (unsupported for YouTube videos)",
+              "label": "Opcions de la pantalla d'inici (no disponible per a vídeos de YouTube)",
               "fields": [
                 {
-                  "label": "The title of this interactive video",
-                  "default": "Interactive Video",
-                  "description": "Used in summaries, statistics etc."
+                  "label": "El títol d'aquest vídeo interactiu",
+                  "default": "Vídeo interactiu",
+                  "description": "Usat en resums, estadístiques, etc."
                 },
                 {
-                  "label": "Hide title on video start screen"
+                  "label": "Amaga el títol del vídeo a la pantalla d'inici"
                 },
                 {
-                  "label": "Short description (Optional)",
-                  "description": "Optional. Display a short description text on the video start screen. Does not work for YouTube videos."
+                  "label": "Descripció curta (Opcional)",
+                  "description": "Opcional. Mostra una descripció textual breu a la pantalla d'inici del vídeo. No està disponible per als vídeos de YouTube."
                 },
                 {
-                  "label": "Poster image",
-                  "description": "Image displayed before the user launches the video. Does not work for YouTube Videos."
+                  "label": "Imatge tipus pòster",
+                  "description": "Imatge que es mostra abans que l'usuari iniciï la visualització del vídeo. No està disponible per als vídeos de YouTube."
                 }
               ]
             },
             {
-              "label": "Text tracks (unsupported for YouTube videos)",
+              "label": "Pistes textuals (no disponible per a vídeos de YouTube)",
               "fields": [
                 {
-                  "label": "Available text tracks",
-                  "entity": "Track",
+                  "label": "Pistes textuals disponibles",
+                  "entity": "Pista",
                   "field": {
-                    "label": "Track",
+                    "label": "Pista",
                     "fields": [
                       {
-                        "label": "Track label",
-                        "description": "Used if you offer multiple tracks and the user has to choose a track. For instance 'Spanish subtitles' could be the label of a Spanish subtitle track.",
-                        "default": "Subtitles"
+                        "label": "Etiqueta de pista",
+                        "description": "Es pot fer servir si oferiu pistes múltiples i l'usuari ha de triar-ne una. Per exemple, 'Subtítols en espanyol' podria ser l'etiqueta d'una pista de subtítols en espanyol.",
+                        "default": "Subtítols"
                       },
                       {
-                        "label": "Type of text track",
+                        "label": "Tipus de pista textual",
                         "options": [
                           {
-                            "label": "Subtitles"
+                            "label": "Subtítols"
                           },
                           {
-                            "label": "Captions"
+                            "label": "Captures"
                           },
                           {
-                            "label": "Descriptions"
+                            "label": "Descripcions"
                           }
                         ]
                       },
                       {
-                        "label": "Source language, must be defined for subtitles",
-                        "default": "en",
-                        "description": "Must be a valid BCP 47 language tag. If 'Subtitles' is the type of text track selected, the source language of the track must be defined."
+                        "label": "Llengua font, cal definir-la per als subtítols",
+                        "default": "ca",
+                        "description": "Ha de ser una etiqueta vàlida d'acord amb BCP 47. Si 'Subtítols' és el tipus de pista textual seleccionada, cal haver defini la llengua font de la pista."
                       },
                       {
-                        "label": "Track source (WebVTT file)"
+                        "label": "Font de la pista (arxiu WebVTT)"
                       }
                     ]
                   }
                 },
                 {
-                  "label": "Default text track",
-                  "description": "If left empty or not matching any of the text tracks the first text track will be used as the default."
+                  "label": "Pista textual per defecte",
+                  "description": "Si queda buida o no coincideix amb cap de les pistes textuals, la primera pista textual es farà servir per defecte."
                 }
               ]
             }
           ]
         },
         {
-          "label": "Add interactions",
+          "label": "Afegeix interaccions",
           "fields": [
             {
               "field": {
                 "fields": [
                   {
-                    "label": "Display time"
+                    "label": "Mostra el temps"
                   },
                   {
-                    "label": "Pause video"
+                    "label": "Atura el vídeo"
                   },
                   {
-                    "label": "Display as",
-                    "description": "<b>Button</b> is a collapsed interaction the user must press to open. <b>Poster</b> is an expanded interaction displayed directly on top of the video",
+                    "label": "Mostra com a",
+                    "description": "<b>Botó</b> és una interacció col·lapsada. Per obrir-la, l'usuari hi ha de fer clic al damunt. <b>Pòster</b> és una interacció expandida que es mostra direcatament a la part superior del vídeo.",
                     "options": [
                       {
-                        "label": "Button"
+                        "label": "Botó"
                       },
                       {
-                        "label": "Poster"
+                        "label": "Pòster"
                       }
                     ]
                   },
                   {
-                    "label": "Turn into button on small screens"
+                    "label": "Converteix en botó a les pantalles petites"
                   },
                   {
-                    "label": "Label",
-                    "description": "Label displayed next to interaction icon."
+                    "label": "Etiqueta",
+                    "description": "Etiqueta que es mostra al costat de la icona d'interacció."
                   },
                   {},
                   {},
