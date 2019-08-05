@@ -260,10 +260,10 @@
           "description": "This option determines if the \"Show Solution\" button will be shown for all questions, disabled for all or configured for each question individually.",
           "options": [
             {
-              "label": "Enabled"
+              "label": "Activat"
             },
             {
-              "label": "Disabled"
+              "label": "Desactivat"
             }
           ]
         },
@@ -272,10 +272,10 @@
           "description": "This option determines if the \"Retry\" button will be shown for all questions, disabled for all or configured for each question individually.",
           "options": [
             {
-              "label": "Enabled"
+              "label": "Activat"
             },
             {
-              "label": "Disabled"
+              "label": "Desactivat"
             }
           ]
         },
